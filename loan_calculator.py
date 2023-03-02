@@ -83,9 +83,9 @@ if args.type == "annuity":
         num = i * ((1 + i) ** n)
         den = (1 + i) ** n - 1
         a = p * (num / den)
-        print(f'Your annuity payment = {math.ceil(a)}!')
+        print(f"Your annuity payment = {math.ceil(a)}!")
         overpayment = math.ceil(a) * n - p
-        print(f'Overpayment = {math.ceil(overpayment)}')
+        print(f"Overpayment = {math.ceil(overpayment)}")
 
     elif args.principal is None:
         a = args.payment
@@ -97,6 +97,6 @@ if args.type == "annuity":
         den2 = num / den
         p = a / den2
         p = int(p)
-        print(f'Your loan principal = {p}!')
+        print(f"Your loan principal = {p}!")
         overpayment = a * n - p
-        print(f'Overpayment = {math.ceil(overpayment)}')
+        print(f"Overpayment = {math.ceil(overpayment)}")
